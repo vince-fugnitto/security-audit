@@ -6,6 +6,10 @@
 
 </div>
 
+## Github Pages
+
+[security-audit](https://vince-fugnitto.github.io/security-audit/)
+
 ## Overview
 
 The repository performs automatic `audit` scans to an example Theia application in an attempt
