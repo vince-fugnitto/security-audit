@@ -201,7 +201,7 @@ function display(): void {
     const summary: string = buildSummaryTable();
     const results: string = buildResultsTable();
     content += `## Security Audit - ${dateStr}\n-- -\n`;
-    content += '\n### Scan Summary';
+    content += '\n### Scan Summary\n';
     content += `\n${summary}\n`;
     content += '\n### Scan Details\n';
     content += `\n${results}\n`;

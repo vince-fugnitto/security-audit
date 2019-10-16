@@ -2,6 +2,7 @@
 -- -
 
 ### Scan Summary
+
 | Moderate | High | Critical |
 |:---|:---|:---|
 | 1 | 1 | 0 |
