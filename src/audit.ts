@@ -201,7 +201,7 @@ function display(): void {
     audit();
     console.log('Preparing the display...');
     const date = new Date();
-    const dateStr: string = `${date.getDate()} / ${date.getMonth()} / ${date.getFullYear()}`;
+    const dateStr: string = `${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}`;
     let content: string = '';
     const summary: string = buildSummaryTable();
     const results: string = buildResultsTable();
