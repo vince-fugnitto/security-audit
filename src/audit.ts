@@ -68,15 +68,20 @@ export interface Result {
 }
 
 /**
+ * Build and run the audit scan, generating the display.
+ */
+function run(): void {
+    build();
+    display();
+}
+
+/**
  * Build the example application.
  * - Builds the application using `yarn` generating the corresponding `yarn.lock`.
  */
 function build(): void {
     console.log('Building....');
-    const yarn = cp.spawn('yarn', { cwd: './theia-application' });
-    yarn.stdout.on('data', data => console.log(`stdout: ${data}`));
-    yarn.stderr.on('data', data => console.log(`stderr: ${data}`));
-    yarn.on('close', code => console.log(`child process ended with the code ${code}`));
+    cp.execSync('yarn', { cwd: './theia-application' });
 }
 
 /**
@@ -233,4 +238,4 @@ function compareSeverity(a: Result, b: Result): number {
     return a.severityCode - b.severityCode;
 }
 
-display();
+run();
