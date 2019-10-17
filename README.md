@@ -1,8 +1,12 @@
 <div align='center'>
 <br />
-<img src='./assets/logo.svg' alt='theia logo' width='125'>
+<img src='https://raw.githubusercontent.com/vince-fugnitto/security-audit/master/assets/logo.svg?sanitize=true' alt='theia logo' width='125'>
 
 <h2>SECURITY AUDIT - THEIA</h2>
+
+<div>
+<img src="https://api.travis-ci.com/vince-fugnitto/security-audit.svg?branch=master" alt="travis status"/>
+</div>
 
 </div>
 
