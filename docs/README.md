@@ -1,4 +1,4 @@
-## Security Audit - 16/10/2019 at 12:45
+## Security Audit - 17/10/2019 at 6:36
 -- -
 
 ### Scan Summary
@@ -10,8 +10,8 @@
 
 ### Scan Details
 
-| Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path | Dev | URL |
+| Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| Code Injection | js-yaml | high | 3.7.0 | <3.13.1 | >=3.13.1 | Upgrade to version 3.13.1. | @theia/cli>@theia/application-manager>css-loader>cssnano>postcss-svgo>svgo>js-yaml | false | [Info](https://npmjs.com/advisories/813) |
-| Denial of Service | js-yaml | moderate | 3.7.0 | <3.13.0 | >=3.13.0 | Upgrade to version 3.13.0. | @theia/cli>@theia/application-manager>css-loader>cssnano>postcss-svgo>svgo>js-yaml | false | [Info](https://npmjs.com/advisories/788) |
+| [Code Injection](https://npmjs.com/advisories/813) | js-yaml (dependency) | high | 3.7.0 | <3.13.1 | >=3.13.1 | Upgrade to version 3.13.1. | @theia/cli>@theia/application-manager>css-loader>cssnano>postcss-svgo>svgo>js-yaml |
+| [Denial of Service](https://npmjs.com/advisories/788) | js-yaml (dependency) | moderate | 3.7.0 | <3.13.0 | >=3.13.0 | Upgrade to version 3.13.0. | @theia/cli>@theia/application-manager>css-loader>cssnano>postcss-svgo>svgo>js-yaml |
 

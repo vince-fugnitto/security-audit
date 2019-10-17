@@ -142,12 +142,12 @@ function buildResultsTable(): string {
     const results: Result[] = parseResults();
     let markdown: string = '';
     // Build the table header.
-    markdown += '| Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path | Dev | URL |';
+    markdown += '| Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path |';
     // Build the table header separator.
     markdown += '\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n';
     // Build the table rows.
     results.forEach((i: Result) => {
-        markdown += `| ${i.vulnerabilityName} | ${i.moduleName} | ${i.severity} | ${i.version} | ${i.vulnerableVersions} | ${i.patchedVersions} | ${i.recommendation} | ${i.path} | ${i.isDev} | [Info](${i.url}) |\n`;
+        markdown += `| [${i.vulnerabilityName}](${i.url}) | ${i.moduleName} (${getDev(i)}) | ${i.severity} | ${i.version} | ${i.vulnerableVersions} | ${i.patchedVersions} | ${i.recommendation} | ${i.path} |\n`;
     });
     return markdown;
 }
@@ -236,6 +236,14 @@ function getSeverityCode(severity: string): number {
  */
 function compareSeverity(a: Result, b: Result): number {
     return a.severityCode - b.severityCode;
+}
+
+/**
+ * Get a human readable name for the 
+ * @param result the audit result.
+ */
+function getDev(result: Result): string {
+    return result.isDev ? 'devDependency' : 'dependency';
 }
 
 run();
