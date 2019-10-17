@@ -1,4 +1,4 @@
-## Security Audit - 17/10/2019 at 14:20 UTC
+## Security Audit - 17/10/2019 at 14:37 UTC
 -- -
 
 ### Scan Summary
@@ -10,6 +10,4 @@
 
 ### Scan Details
 
-| Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path |
-|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-
+No vulnerabilities found!
