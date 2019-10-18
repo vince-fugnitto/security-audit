@@ -1,7 +1,14 @@
-## Security Audit - 18/10/2019 at 15:44 UTC
+### Security Audit - 18/10/2019 at 15:56 UTC
 -- -
 
-### Scan Details
+#### Scan Summary
+
+| Moderate | High | Critical |
+|:---|:---|:---|
+| 1 | 1 | 0 |
+
+
+#### Scan Details
 
 | Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
