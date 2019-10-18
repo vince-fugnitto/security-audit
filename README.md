@@ -1,11 +1,10 @@
-## Security Audit - 18/10/2019 at 15:23 UTC
+## Security Audit - 18/10/2019 at 15:44 UTC
 -- -
 
 ### Scan Details
 
 | Security Vulnerability | Module Name | Severity | Version | Vulnerable Versions | Patched Versions | Recommendation | Path |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| [Regular Expression Denial of Service](https://npmjs.com/advisories/534) | debug (devDependency) | low | 0.8.1 | <= 2.6.8 \|\| >= 3.0.0 <= 3.0.1 | >= 2.6.9 < 3.0.0 \|\| >= 3.1.0 | Version 2.x.x: Update to version 2.6.9 or later.
-Version 3.x.x: Update to version 3.1.0 or later.
- | @theia/callhierarchy>@theia/core>@theia/application-package>changes-stream>debug |
+| [Code Injection](https://npmjs.com/advisories/813) | js-yaml (devDependency) | high | 3.7.0 | <3.13.1 | >=3.13.1 | Upgrade to version 3.13.1. | @theia/cli>@theia/application-manager>css-loader>cssnano>postcss-svgo>svgo>js-yaml |
+| [Denial of Service](https://npmjs.com/advisories/788) | js-yaml (devDependency) | moderate | 3.7.0 | <3.13.0 | >=3.13.0 | Upgrade to version 3.13.0. | @theia/cli>@theia/application-manager>css-loader>cssnano>postcss-svgo>svgo>js-yaml |
 
