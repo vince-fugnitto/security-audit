@@ -1,4 +1,6 @@
-### Security Audit - 18/10/2019 at 15:56 UTC
+<div align='center'><br /><img src='../assets/security-header.png' width="350px"/></div>
+
+### Security Audit - 18/10/2019 at 16:24 UTC
 -- -
 
 #### Scan Summary
