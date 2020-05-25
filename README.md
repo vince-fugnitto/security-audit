@@ -1,6 +1,6 @@
 <div align='center'><br /><img src="https://raw.githubusercontent.com/vince-fugnitto/security-audit/master/assets/security-header.png" width="400px"/></div>
 
-### Security Audit - 24/5/2020 at 10:56 UTC
+### Security Audit - 25/5/2020 at 10:56 UTC
 -- -
 
 #### Scan Summary
